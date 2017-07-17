@@ -9,4 +9,10 @@ inputs:
 - name: hello-world
 
 run:
-  path: hello-world/ci/build-main.sh
+  path: sh
+  args:
+    - -exc
+    - |
+      cd spring-boot
+      ./mvnw -f main clean install
+      cp source-code/target/spring-boot-hello-world-0.0.1-SNAPSHOT.jar  build-output/.
