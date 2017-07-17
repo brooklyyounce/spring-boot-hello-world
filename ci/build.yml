@@ -3,16 +3,10 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: java
+    repository: springboot/ci-base-8-jdk
 
 inputs:
 - name: hello-world
 
 run:
-  path: sh
-  args:
-  - -exc
-  - |
-    cd hello-world
-    mvn package
-    cp ./target/spring-boot-hello-world-1.0-SNAPSHOT.jar ../built-project/demo.jar
+  path: hello-world/ci/build-main.sh
