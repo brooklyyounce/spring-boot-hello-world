@@ -2,7 +2,7 @@ applications:
 - name: spring-boot-hello-world
   memory: 512M
   instances: 1
-  path: hello-world/target/spring-boot-hello-world-1.0-SNAPSHOT.jar
+  path: target/spring-boot-hello-world-1.0-SNAPSHOT.jar
   buildpack: https://github.com/cloudfoundry/java-buildpack.git
   random-route: true
   timeout: 180
