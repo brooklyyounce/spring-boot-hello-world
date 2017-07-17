@@ -17,4 +17,3 @@ run:
     - |
       cd hello-world
       mvn package
-      cp ./target/spring-boot-hello-world-1.0-SNAPSHOT.jar ../built-project/demo.jar
