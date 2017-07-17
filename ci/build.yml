@@ -17,4 +17,5 @@ run:
     - |
       cd hello-world
       mvn package
-      cp ./target/spring-boot-hello-world-1.0-SNAPSHOT.jar ../built-project/demo.jar
+      if [ -f ./target/spring-boot-hello-world-1.0-SNAPSHOT.jar ] ; then echo "yes, the .jar is there" ; else echo "no, it's not where expected" ; fi
+      cp ./target/spring-boot-hello-world-1.0-SNAPSHOT.jar ./built-project/demo.jar
