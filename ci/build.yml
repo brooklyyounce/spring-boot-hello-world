@@ -1,3 +1,5 @@
+---
+
 platform: linux
 
 image_resource:
@@ -6,7 +8,7 @@ image_resource:
     repository: maven
 
 inputs:
-- name: spring-boot-hello-world
+- name: hello-world
 
 outputs:
 - name: built-project
@@ -16,6 +18,7 @@ run:
   args:
   - -exc
   - |
-    cd spring-boot-hello-world
-    mvn package
+    cd hello-world
+    mvn clean
+    mvn install
     cp ./target/spring-boot-hello-world-0.0.1-SNAPSHOT.jar ../built-project/demo.jar
