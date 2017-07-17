@@ -13,7 +13,6 @@ run:
   args:
   - -exc
   - |
-  - cd hello-world
-  - mvn package
-  - cp ./target/spring-boot-hello-world-0.0.1-SNAPSHOT.jar ../built-project/demo.jar
-    
+    cd hello-world
+    mvn package
+    cp ./target/spring-boot-hello-world-0.0.1-SNAPSHOT.jar ../built-project/demo.jar
