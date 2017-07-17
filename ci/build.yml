@@ -10,9 +10,6 @@ image_resource:
 inputs:
 - name: hello-world
 
-outputs:
-- name: built-project
-
 run:
   path: sh
   args:
