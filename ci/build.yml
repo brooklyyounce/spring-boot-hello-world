@@ -18,6 +18,3 @@ run:
       cd hello-world
       mvn package
       if [ -f ./target/spring-boot-hello-world-1.0-SNAPSHOT.jar ] ; then echo "yes, the .jar is there" ; else echo "no, it's not where expected" ; fi
-      cd target
-      ls pwd
-      cd hello-world
