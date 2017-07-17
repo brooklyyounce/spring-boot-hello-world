@@ -10,5 +10,6 @@ inputs:
 - name: hello-world
 
 run:
+  user: root
   path: hello-world/ci/build.sh
     
